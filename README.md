@@ -1,6 +1,6 @@
 # Uponor Bridge for Home Assistant
 
-A Home Assistant app (add-on) repository containing **Uponor Bridge**: a read-only, passive listener for the Uponor Smatrix Base (X-145) thermostat RS485 bus. It decodes thermostat traffic received through a USB-RS485 adapter and publishes room temperatures, setpoints and status to MQTT using Home Assistant MQTT discovery.
+A Home Assistant app repository containing **Uponor Bridge**: a read-only, passive listener for the Uponor Smatrix Base (X-145) thermostat RS485 bus. It decodes thermostat traffic received through a USB-RS485 adapter and publishes room temperatures, setpoints and status to MQTT using Home Assistant MQTT discovery.
 
 The bridge **never transmits** on the bus. It only listens.
 
@@ -13,9 +13,9 @@ The bridge **never transmits** on the bus. It only listens.
 
 1. In Home Assistant go to **Settings → Apps → App store**, open the ⋮ menu → **Repositories**.
 2. Add `https://github.com/tsilen/ha-uponor-bridge`.
-3. Install **Uponor Bridge**, select your serial port in the configuration and start it.
+3. Install **Uponor Bridge**, select your serial port in the configuration, enable **Start on boot** and **Watchdog**, then start it.
 
-See [uponor_bridge/DOCS.md](uponor_bridge/DOCS.md) for details.
+See [uponor_bridge/DOCS.md](uponor_bridge/DOCS.md) for configuration, entities and behaviour.
 
 ## Credits
 
